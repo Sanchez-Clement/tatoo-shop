@@ -6,10 +6,18 @@ nav {
   display: none;
 }
 
+h1 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 30px;
+  margin: auto;
+}
+
 header {
   height: 60px;
   background-color: #000000;
   width: 100%;
+  display: flex;
 }
 
 main {
