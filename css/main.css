@@ -43,6 +43,8 @@ main {
 
 .background img {
   margin: auto;
+  position: relative;
+  left:10px;
 }
 
 button {
