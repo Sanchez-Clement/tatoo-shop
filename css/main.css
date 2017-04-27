@@ -82,3 +82,13 @@ color: white;
   font-size:30px;
 
 }
+
+.gallerie {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallerie img {
+  width: 180px;
+}
