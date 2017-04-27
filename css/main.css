@@ -129,3 +129,57 @@ h2 {
   align-items: center;
 
 }
+
+
+
+/****************************************************************contact**************************************************/
+.maincontact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.maincontact img {
+  width: 15%;
+  margin:  0 auto;
+  padding-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 250px;
+}
+h3, p {
+  text-align: center;
+}
+
+.maincontact h3{
+  padding-bottom: 10px;
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+}
+
+.maincontact p {
+  padding-bottom: 15px;
+  font-family: 'Shadows Into Light', cursive;
+}
+label {
+  display: none;
+}
+
+input {
+border: black solid 3px;
+width: 250px;
+
+}
+
+.envoyer {
+  width: 30%;
+}
+
+iframe {
+  width: 100%;
+}
