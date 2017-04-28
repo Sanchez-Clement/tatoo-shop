@@ -2,6 +2,8 @@ li {
   list-style: none;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -115,6 +117,7 @@ main {
 
 .accueil-phone {
   position: absolute;
+
   bottom: 20px;
   width: 100%;
   display: flex;
@@ -164,6 +167,10 @@ h2 {
 
 .gallerie img {
   width: 180px;
+}
+
+.gallerie img:nth-child(9) {
+  display: none;
 }
 
 .gallerie img:hover {
@@ -256,7 +263,7 @@ iframe {
   width: 100%;
 }
 
-/*************************************************************************/
+/************************************news*************************************/
 
 
 
@@ -298,8 +305,13 @@ figure:focus {
 }
 
 /*********************************************************tablette**************************************/
-@media (min-width:600px) {
+@media (min-width:670px) {
 
+.accueil-phone {
+
+  position: fixed;
+
+}
   nav {
     display: none;
   }
@@ -325,9 +337,10 @@ figure:focus {
 
   .background {
     background-image: url("../img/tab/font-tab.jpg");
-    height: 1220px;
-    background-size: 124%;
+    height: 964px;
+    background-size: 135% ;
     background-position: top;
+
 
   }
 
@@ -349,7 +362,19 @@ figure:focus {
     font-size: 40px;
   }
 
+
+/*********************************************gallerie***********************************/
+.gallerie img {
+  width: 300px;
 }
+
+.gallerie img:nth-child(7), .gallerie img:nth-child(8) {
+  padding-bottom: 50px;
+}
+
+}
+
+/************************************************************************pc*********************************************/
 
 @media (min-width:850px) {
 
@@ -361,6 +386,16 @@ figure:focus {
 
 .background img {
   width: 40%;
+}
+
+/************************************************gallerie***************************************/
+.gallerie img {
+  width: 330px;
+}
+
+.gallerie img:nth-child(9) {
+  display: block;
+  padding-bottom: 50px;
 }
 
 }
