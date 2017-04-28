@@ -265,11 +265,13 @@ iframe {
 
 /************************************news*************************************/
 
-
+.mainnews h3 {
+  font-family: 'Lobster', cursive;
+}
 
 figure {
   width: 322px;
-  height: 322px;
+  height: 337px;
   overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
@@ -370,6 +372,11 @@ figure:focus {
 
 .gallerie img:nth-child(7), .gallerie img:nth-child(8) {
   padding-bottom: 50px;
+}
+
+.footer-phone i {
+  position: relative;
+  top: 10px;
 }
 
 }
