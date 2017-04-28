@@ -10,7 +10,9 @@ li {
 a {
   text-decoration: none;
 }
-
+.tabpc {
+  display: none;
+}
 
  #burger {
    display: none;
@@ -118,6 +120,8 @@ main {
   display: flex;
   justify-content: space-around;
 }
+
+
 .accueil-phone li ,.footer-phone li{
 
   background-color: #D29B41;
@@ -291,4 +295,72 @@ figcaption {
 figure:focus {
 
   height: 100%;
+}
+
+/*********************************************************tablette**************************************/
+@media (min-width:600px) {
+
+  nav {
+    display: none;
+  }
+
+  h1 {display: none;}
+
+  .tabpc {
+    display: block;
+    width: 100%
+  }
+
+  .tabpc ul {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+
+  .tabpc a {
+    color: white;
+  }
+
+  .background {
+    background-image: url("../img/tab/font-tab.jpg");
+    height: 1220px;
+    background-size: 124%;
+    background-position: top;
+
+  }
+
+  .background img {
+    width: 70%;
+  }
+
+  .accueil-phone li ,.footer-phone li{
+
+
+    width: 60px;
+    height: 60px;
+
+    text-align: center;
+    border-radius: 60px;
+  }
+
+  .accueil-phone a {
+    font-size: 40px;
+  }
+
+}
+
+@media (min-width:850px) {
+
+.background {
+  background-image: url("../img/pc/font-pc.jpg");
+  height : 580px;
+
+}
+
+.background img {
+  width: 40%;
+}
+
 }
