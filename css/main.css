@@ -153,6 +153,7 @@ h2 {
   font-family: 'Lobster', cursive;
   text-align: center;
   padding: 20px;
+
 }
 
 
@@ -286,6 +287,7 @@ figure {
 
 figure img {
   margin-top: 5px;
+  height: 214.6px;
 }
 
 
@@ -366,6 +368,10 @@ figure:focus {
 
 
 /*********************************************gallerie***********************************/
+.h2news {
+  width: 80%;
+}
+
 .gallerie img {
   width: 300px;
 }
@@ -379,11 +385,39 @@ figure:focus {
   top: 10px;
 }
 
+/***************************************gallerie***********************************/
+.mainnews {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.mainnews figure:nth-child(4) {
+  width: 700px;
+  height: 435px;
+
+}
+
+.mainnews figure:nth-child(4):focus {
+
+  height: 100%;
+
+}
+
+
+
+.mainnews figure:nth-child(4) img {
+height: 300px;
+}
+
+
+
 }
 
 /************************************************************************pc*********************************************/
 
-@media (min-width:850px) {
+@media (min-width:1000px) {
 
 .background {
   background-image: url("../img/pc/font-pc.jpg");
@@ -403,6 +437,31 @@ figure:focus {
 .gallerie img:nth-child(9) {
   display: block;
   padding-bottom: 50px;
+}
+
+/*********************************************news*********************************************/
+
+.mainnews figure {
+  width: 500px;
+  height: 500px;
+}
+
+.mainnews figcaption {
+  font-size: 15px;
+}
+
+.mainnews figure:focus {
+  height: 100%;
+}
+
+figure img {
+
+  height: 333.2px;
+}
+
+.mainnews figure:nth-child(4) {
+  width: 800px;
+
 }
 
 }
