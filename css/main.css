@@ -411,6 +411,89 @@ figure:focus {
 height: 300px;
 }
 
+/************************************************contact*********************************/
+
+.maincontact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+.maincontact h3, .maincontact p {
+  width: 50%;
+}
+
+
+.maincontact h2 {
+  order: 1;
+  width: 700px;
+}
+
+.maincontact img {
+  order: 2;
+  width: 30%
+}
+
+.maincontact h3 {
+  font-size: 30px;
+  order: 3;
+}
+
+.maincontact p {
+  font-size: 25px;
+  order: 4;
+}
+
+.maincontact form {
+  order: 5;
+}
+
+.maincontact iframe {
+  order: 6;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+  justify-content: space-around;
+}
+
+form div {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  align-items: center;
+}
+
+form label {
+  display: block;
+}
+
+
+.leftcontact input {
+  height: 20px;
+}
+
+.envoyer {
+  width: 30%
+}
+
+#map{
+  width: 80%;
+  margin: 20px;
+  padding : 10px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black ;
+}
+
+
+}
+
+
+
+
 
 
 }
