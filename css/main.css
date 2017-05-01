@@ -3,7 +3,6 @@ li {
 }
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -12,35 +11,37 @@ li {
 a {
   text-decoration: none;
 }
-.tabpc {
+/*****************************Début du menu hamburger pour téléphone*************************************/
+.tabpc, #burger {
   display: none;
 }
 
- #burger {
-   display: none;
- }
+/************Label avec icone hamburger**************************/
 
  nav label {
-   display: block;
-   border-radius: 29px;
- height: 50px;
- width: 50px;
-color: white;
-background-color: #D29B41;
-position: relative;
-right: 10px;
-top: 30px;
-font-size: 28px;
+  display: block;
+  border-radius: 29px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: #D29B41;
+  right: 10px;
+  top: 30px;
+  font-size: 28px;
  }
 
- nav label i {
+ nav label, nav label i {
    position: relative;
+ }
+
+ /**********************Icone hamburger******************/
+
+ nav label i {
    top : 8px;
    left: 13px;
  }
 
  nav a {
-   font-family: 'Lobster', cursive;
    color: black;
    width: 100%;
    font-size: 30px;
@@ -49,6 +50,8 @@ font-size: 28px;
  nav a:hover {
    color:#D29B41;
  }
+
+ /*************************Menu déplié******************************/
 
  #burger:checked ~ .menuphone {
   display: block;
@@ -69,40 +72,49 @@ width: 0;
 overflow: hidden;
 background-color: white;
 
-
-
 }
 
+/*********************************************Fin du menu hamburger************/
+
 h1 {
-  font-family: 'Lobster', cursive;
-  color: white;
+
   font-size: 30px;
   margin: auto;
+}
+
+h1, nav a, h2, h3 {
+  font-family: 'Lobster', cursive;
+}
+
+h1,.accueil-phone a,.footer-phone a {
+  color: white;
 }
 
 header {
   height: 60px;
   background-color: #000000;
-  width: 100%;
-  display: flex;
   position: sticky;
   top: 0;
   z-index: 10;
+}
 
+header, .background, .accueil-phone {
+  width: 100%;
+  display: flex;
 }
 
 main {
   height: 100%;
 }
 
+/***************************Image de fond de la page accueil********************/
+
 .background {
-  width: 100%;
   height: 580px;
   background-image: url("../img/phone/font-phone.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 114%;
-  display: flex;
   overflow: hidden;
 
 
@@ -110,17 +122,18 @@ main {
 
 .background img {
   margin: auto;
-  position: relative;
   left:10px;
 }
 
+.background img,.accueil-phone a,.footer-phone a  {
+  position: relative;
+}
+/******************************Fin image de fond accueil**********************/
+/*****************************footer de la page accueil**************************/
 
 .accueil-phone {
   position: absolute;
-
   bottom: 20px;
-  width: 100%;
-  display: flex;
   justify-content: space-around;
 }
 
@@ -130,18 +143,16 @@ main {
   background-color: #D29B41;
   width: 40px;
   height: 40px;
-
   text-align: center;
   border-radius: 30px;
 }
 
 .accueil-phone a,.footer-phone a{
-  color: white;
   font-size:25px;
-  position: relative;
   top:6px;
 
 }
+/*****************************fin footer accueil************************************/
 
 /*****************************************************gallerie.html*******************************************************/
 
@@ -150,18 +161,11 @@ main {
 }
 
 h2 {
-  font-family: 'Lobster', cursive;
-  text-align: center;
   padding: 20px;
-
 }
 
-
-
-
-
 .gallerie {
-  display: flex;
+
   flex-flow: row wrap;
   justify-content: center;
 }
@@ -178,6 +182,8 @@ h2 {
   opacity: 0.9;
 }
 
+/************************** début footer des autres pages que accueil**********/
+
 .footer-phone {
   background-color: #2c2c2c;
   height: 80px;
@@ -185,55 +191,61 @@ h2 {
 
 }
 
+.gallerie, .footer-phone ul, .maincontact, .mainnews, form, figure {
+  display: flex;
+}
+
 .footer-phone ul {
   height: 80px;
-  display: flex;
+
   justify-content: space-around;
   align-items: center;
 
 }
 
+/************************** fin footer des autres pages que accueil**********/
 
 
-/****************************************************************contact**************************************************/
-.maincontact, .mainnews{
-  display: flex;
+
+/****************************************************************contact.html**************************************************/
+.maincontact, .mainnews, form{
   flex-flow: column nowrap;
   align-items: center;
 }
+
 .maincontact img {
   width: 15%;
   margin:  0 auto;
   padding-bottom: 15px;
 }
 
-form {
-  display: flex;
-  flex-flow: column nowrap;
+form { /*************formulaire contact***************/
+
   justify-content: center;
-  align-items: center;
   margin-top: 10px;
   width: 250px;
 }
-h3, p {
+
+h3, p, h2, figcaption {
   text-align: center;
 }
 
 .maincontact h3{
   padding-bottom: 10px;
-  font-family: 'Lobster', cursive;
   font-size: 18px;
 }
+
 
 .maincontact p {
   padding-bottom: 15px;
   font-family: 'Shadows Into Light', cursive;
 }
+
 label {
   display: none;
 }
 
-input {
+input { /*******champs de saisies du formulaire*********************/
 border: black solid 3px;
 width: 250px;
 margin-bottom: 5px;
@@ -264,23 +276,18 @@ iframe {
   width: 100%;
 }
 
-/************************************news*************************************/
+/************************************news.html*********************************************/
 
-.mainnews h3 {
-  font-family: 'Lobster', cursive;
-}
 
 figure {
   width: 322px;
   height: 337px;
   overflow: hidden;
-  display: flex;
   flex-flow: column nowrap;
   background-color: white;
   margin-bottom: 40px;
   padding-top: 10px;
   box-shadow: 0 3px 8px grey;
-
 
 }
 
@@ -294,7 +301,6 @@ figure img {
 figcaption {
   font-family: 'Shadows Into Light', cursive;
   padding: 10px;
-  text-align: center;
   width: 80%;
   position: relative;
   top :-30px;
@@ -304,7 +310,6 @@ figcaption {
 }
 
 figure:focus {
-
   height: 100%;
 }
 
@@ -312,15 +317,14 @@ figure:focus {
 @media (min-width:670px) {
 
 .accueil-phone {
-
   position: fixed;
 
 }
-  nav {
+
+  nav, h1 {
     display: none;
   }
 
-  h1 {display: none;}
 
   .tabpc {
     display: block;
@@ -330,6 +334,8 @@ figure:focus {
   h2 {
     font-size: 35px;
   }
+
+  /***********************menu pour tablette et pc *****************************/
 
   .tabpc ul {
 
@@ -342,6 +348,7 @@ figure:focus {
   .tabpc a {
     color: white;
   }
+/*************************Image de fond de la page d'accueil**********************/
 
   .background {
     background-image: url("../img/tab/font-tab.jpg");
@@ -349,19 +356,20 @@ figure:focus {
     background-size: 135% ;
     background-position: top;
 
-
   }
+
 
   .background img {
     width: 70%;
   }
+
+  /*****************footer ************************/
 
   .accueil-phone li ,.footer-phone li{
 
 
     width: 60px;
     height: 60px;
-
     text-align: center;
     border-radius: 60px;
   }
@@ -371,7 +379,7 @@ figure:focus {
   }
 
 
-/*********************************************gallerie***********************************/
+/*********************************************gallerie.html***********************************/
 .h2news {
   width: 80%;
 }
@@ -389,9 +397,8 @@ figure:focus {
   top: 10px;
 }
 
-/***************************************gallerie***********************************/
+/***************************************news.html***********************************/
 .mainnews {
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -404,11 +411,9 @@ figure:focus {
 }
 
 .mainnews figure:nth-child(4):focus {
-
   height: 100%;
 
 }
-
 
 
 .mainnews figure:nth-child(4) img {
@@ -418,11 +423,10 @@ height: 300px;
 /************************************************contact*********************************/
 
 .maincontact {
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
 }
+
 
 .maincontact h3, .maincontact p {
   width: 50%;
@@ -458,10 +462,10 @@ height: 300px;
 .maincontact iframe {
   order: 6;
 }
-
+/********************formulaire de contact***************************/
 
 form {
-  display: flex;
+
   flex-flow: row wrap;
   width: 95%;
   justify-content: center;
@@ -471,7 +475,7 @@ form div {
   display: flex;
   flex-flow: column nowrap;
   width: 45%;
-  /*align-items: center;*/
+
 }
 
 .leftcontact {
@@ -510,6 +514,8 @@ form input {
   margin-bottom: 40px;
 }
 
+/********************fin du formulaire de contact***********************/
+
 #map{
   width: 80%;
   margin: 20px;
@@ -520,11 +526,6 @@ form input {
 
 
 }
-
-
-
-
-
 
 
 /************************************************************************pc*********************************************/
@@ -545,7 +546,7 @@ form input {
   width: 40%;
 }
 
-/************************************************gallerie***************************************/
+/************************************************gallerie.html***************************************/
 .gallerie img {
   width: 330px;
 }
@@ -555,7 +556,7 @@ form input {
   padding-bottom: 50px;
 }
 
-/*********************************************news*********************************************/
+/*********************************************news.html*********************************************/
 
 .mainnews figure {
   width: 500px;
@@ -571,7 +572,6 @@ form input {
 }
 
 figure img {
-
   height: 333.2px;
 }
 
@@ -580,7 +580,7 @@ figure img {
 
 }
 
-/********************************************contact*********************************/
+/********************************************contact.html*********************************/
 #tribal{
   display: none;
 }
@@ -600,6 +600,8 @@ figure img {
   font-size: 30px;
   margin-bottom: 60px;
 }
+
+/**********************************formulaire de contact***********************/
 
 form label, form input {
   width: 400px;
@@ -635,6 +637,8 @@ form label, form input {
   background-color: #D29B41;
   color: black;
 }
+
+/****************************************fin du formulaire de contact*********/
 
  #map {
    border-top: 5px solid black;
