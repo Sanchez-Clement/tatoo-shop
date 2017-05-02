@@ -103,26 +103,34 @@ header, .background, .accueil-phone {
   display: flex;
 }
 
+
+
 main {
   height: 100%;
 }
 
 /***************************Image de fond de la page accueil********************/
 
-.background {
-  height: 580px;
-  background-image: url("../img/phone/font-phone.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 114%;
-  overflow: hidden;
+
+
+#entree {
+  background: url("../img/phone/font-phone.jpg") no-repeat top fixed;
+  background-size: cover;
+  height: 100%;
 
 
 }
 
+#entree main {
+  background: none;
+}
+
 .background img {
+  width: 300px;
+  top: 100px;
   margin: auto;
   left:10px;
+
 }
 
 .background img,.accueil-phone a,.footer-phone a  {
@@ -350,17 +358,14 @@ figure:focus {
   }
 /*************************Image de fond de la page d'accueil**********************/
 
-  .background {
+#entree {
     background-image: url("../img/tab/font-tab.jpg");
-    height: 1220px;
-    background-size: 135% ;
-    background-position: top;
 
   }
 
 
-  .background img {
-    width: 70%;
+  #entree img {
+    width: 500px;
   }
 
   /*****************footer ************************/
@@ -536,14 +541,15 @@ form input {
     font-size: 45px;
   }
 
-.background {
+#entree {
   background-image: url("../img/pc/font-pc.jpg");
-  height : 580px;
+
 
 }
 
-.background img {
-  width: 40%;
+#entree img {
+  width: 500px;
+  top: 50px;
 }
 
 /************************************************gallerie.html***************************************/
